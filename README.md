@@ -1,24 +1,3 @@
-# Student ToDo:
-1. Erstellen Sie einen fork von diesem Repository
-2. Dieser fork sollte private sein
-3. Fügen Sie in ihrem fork bzw. Repository die Lehrenden unter `Settings --> Collaborators` mit Lese- und Schreibrechten hinzu
-4. Implementieren Sie das nachfolgende Beispiel und commiten Sie dieses in Ihr Repository
-5. Pushen Sie Ihre Änderungen auf Ihr Repository
-
-## Änderungen in den eigenen Fork mergen (nur wenn nötig!)
-Fügen Sie zunächst dieses Repository (das der Organisation) als weiteres remote Repository hinzu (Name: `upstream`)
-```bash
-git remote add upstream https://itsp.htl-leoben.at/git/%organisation%/%exercise-name%.git
-```
-Remote repository herunterladen
-```bash
-git fetch upstream
-```
-Merge durchführen
-```bash
-git merge upstream/master master -m "merge changes from upstream"
-```
-
 # Priority Message Queue
 
 Es soll mit Hilfe von `wait()` und `notifyAll(`), eine Message Queue erstellt werden, in der Nachrichten von `Producer` erzeugt werden und `Consumer`, diese Nachrichten aus der `MessqgeQueue` holen. Das Abholen der Messages soll generell nach dem **FIFO** Prinzip erfolgen. Eine `Message` besteht aus einem Prirority-Flag und dem eigentlichen Content (String). Messages, bei denen das Priority Flag auf `true` gesetzt ist, sollen vorgereiht werden - wobei auch für Priority Nachrichten das **FIFO** Prinzip angewandt wreden soll.
